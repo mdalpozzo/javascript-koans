@@ -104,9 +104,32 @@ describe("About Applying What We Have Learnt", function() {
 
   /*********************************************************************************/
   /* UNCOMMENT FOR EXTRA CREDIT */
-  /*
-  it("should find the largest prime factor of a composite number", function () {
   
+  it("should find the largest prime factor of a composite number", function () {
+    var isPrime = function(number) {
+      return _.range(1, number).every(function(x) {
+        return number % x !== 0;
+      });
+    }
+
+    var isFactor = function(number) {
+      return number % x === 0;
+    }
+    //create array of prime factors
+    var primeFactors = _.range(1, number)
+               .filter(isPrime() && isFactor())
+    }
+
+/*
+    array.map(function(number) {
+      if ( array.every(function(x) {number >= x}) ) {
+        return number;
+      }
+    })
+
+    */
+
+    expect().toBe();
   });
 
   it("should find the largest palindrome made from the product of two 3 digit numbers", function () {
@@ -125,5 +148,5 @@ describe("About Applying What We Have Learnt", function() {
   it("should find the 10001st prime", function () {
 
   });
-  */
+  
 });
